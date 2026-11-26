@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "avery",
+  "version": "${version}",
+  "name": "Avery AI",
+  "description": "ИИ-игрок Эвери: отвечает в чате, слушает команды и живёт своей жизнью.",
+  "authors": ["Жждо"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.avery.ai.AveryMod"],
+    "modmenu": ["com.avery.ai.client.AveryModMenu"],
+    "voicechat": ["com.avery.ai.voice.AveryVoicePlugin"]
+  },
+  "mixins": ["avery.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "recommends": {
+    "modmenu": "*",
+    "cloth-config": "*",
+    "voicechat": "*"
+  }
+}
